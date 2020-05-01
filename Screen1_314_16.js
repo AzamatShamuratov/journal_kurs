@@ -31,12 +31,83 @@ Apperyio.AppPages = [{
 function Screen1_314_16_js() {
     /* Object & array with components "name-to-id" mapping */
     var n2id_buf = {
-        'mobilebutton_17': 'Screen1_314_16_mobilebutton_17',
-        'mobilebutton_18': 'Screen1_314_16_mobilebutton_18',
-        'mobilebutton_19': 'Screen1_314_16_mobilebutton_19',
-        'mobilebutton_20': 'Screen1_314_16_mobilebutton_20',
-        'mobilebutton_21': 'Screen1_314_16_mobilebutton_21',
-        'mobilebutton_22': 'Screen1_314_16_mobilebutton_22'
+        'mobilecollapsibleset_31': 'Screen1_314_16_mobilecollapsibleset_31',
+        'mobilecollapsblock_32': 'Screen1_314_16_mobilecollapsblock_32',
+        'mobilecollapsblockheader_33': 'Screen1_314_16_mobilecollapsblockheader_33',
+        'mobilecollapsblockcontent_34': 'Screen1_314_16_mobilecollapsblockcontent_34',
+        'mobilelabel_57': 'Screen1_314_16_mobilelabel_57',
+        'mobilelabel_59': 'Screen1_314_16_mobilelabel_59',
+        'mobilelabel_73': 'Screen1_314_16_mobilelabel_73',
+        'mobilelabel_60': 'Screen1_314_16_mobilelabel_60',
+        'mobilelabel_61': 'Screen1_314_16_mobilelabel_61',
+        'mobilelabel_72': 'Screen1_314_16_mobilelabel_72',
+        'mobilelabel_62': 'Screen1_314_16_mobilelabel_62',
+        'mobilelabel_63': 'Screen1_314_16_mobilelabel_63',
+        'mobilelabel_70': 'Screen1_314_16_mobilelabel_70',
+        'mobilelabel_64': 'Screen1_314_16_mobilelabel_64',
+        'mobilelabel_65': 'Screen1_314_16_mobilelabel_65',
+        'mobilelabel_71': 'Screen1_314_16_mobilelabel_71',
+        'mobilecollapsblock_35': 'Screen1_314_16_mobilecollapsblock_35',
+        'mobilecollapsblockheader_36': 'Screen1_314_16_mobilecollapsblockheader_36',
+        'mobilecollapsblockcontent_37': 'Screen1_314_16_mobilecollapsblockcontent_37',
+        'mobilelabel_66': 'Screen1_314_16_mobilelabel_66',
+        'mobilelabel_67': 'Screen1_314_16_mobilelabel_67',
+        'mobilelabel_74': 'Screen1_314_16_mobilelabel_74',
+        'mobilelabel_68': 'Screen1_314_16_mobilelabel_68',
+        'mobilelabel_69': 'Screen1_314_16_mobilelabel_69',
+        'mobilelabel_75': 'Screen1_314_16_mobilelabel_75',
+        'mobilecollapsblock_38': 'Screen1_314_16_mobilecollapsblock_38',
+        'mobilecollapsblockheader_39': 'Screen1_314_16_mobilecollapsblockheader_39',
+        'mobilecollapsblockcontent_40': 'Screen1_314_16_mobilecollapsblockcontent_40',
+        'mobilelabel_77': 'Screen1_314_16_mobilelabel_77',
+        'mobilelabel_78': 'Screen1_314_16_mobilelabel_78',
+        'mobilelabel_79': 'Screen1_314_16_mobilelabel_79',
+        'mobilelabel_81': 'Screen1_314_16_mobilelabel_81',
+        'mobilelabel_82': 'Screen1_314_16_mobilelabel_82',
+        'mobilelabel_83': 'Screen1_314_16_mobilelabel_83',
+        'mobilelabel_84': 'Screen1_314_16_mobilelabel_84',
+        'mobilelabel_85': 'Screen1_314_16_mobilelabel_85',
+        'mobilelabel_86': 'Screen1_314_16_mobilelabel_86',
+        'mobilelabel_87': 'Screen1_314_16_mobilelabel_87',
+        'mobilelabel_88': 'Screen1_314_16_mobilelabel_88',
+        'mobilelabel_89': 'Screen1_314_16_mobilelabel_89',
+        'mobilelabel_90': 'Screen1_314_16_mobilelabel_90',
+        'mobilelabel_91': 'Screen1_314_16_mobilelabel_91',
+        'mobilecollapsblock_41': 'Screen1_314_16_mobilecollapsblock_41',
+        'mobilecollapsblockheader_42': 'Screen1_314_16_mobilecollapsblockheader_42',
+        'mobilecollapsblockcontent_43': 'Screen1_314_16_mobilecollapsblockcontent_43',
+        'mobilelabel_92': 'Screen1_314_16_mobilelabel_92',
+        'mobilelabel_93': 'Screen1_314_16_mobilelabel_93',
+        'mobilelabel_94': 'Screen1_314_16_mobilelabel_94',
+        'mobilelabel_95': 'Screen1_314_16_mobilelabel_95',
+        'mobilelabel_96': 'Screen1_314_16_mobilelabel_96',
+        'mobilelabel_97': 'Screen1_314_16_mobilelabel_97',
+        'mobilelabel_98': 'Screen1_314_16_mobilelabel_98',
+        'mobilelabel_99': 'Screen1_314_16_mobilelabel_99',
+        'mobilelabel_100': 'Screen1_314_16_mobilelabel_100',
+        'mobilecollapsblock_44': 'Screen1_314_16_mobilecollapsblock_44',
+        'mobilecollapsblockheader_45': 'Screen1_314_16_mobilecollapsblockheader_45',
+        'mobilecollapsblockcontent_46': 'Screen1_314_16_mobilecollapsblockcontent_46',
+        'mobilelabel_115': 'Screen1_314_16_mobilelabel_115',
+        'mobilelabel_116': 'Screen1_314_16_mobilelabel_116',
+        'mobilelabel_117': 'Screen1_314_16_mobilelabel_117',
+        'mobilelabel_101': 'Screen1_314_16_mobilelabel_101',
+        'mobilelabel_102': 'Screen1_314_16_mobilelabel_102',
+        'mobilelabel_103': 'Screen1_314_16_mobilelabel_103',
+        'mobilelabel_107': 'Screen1_314_16_mobilelabel_107',
+        'mobilelabel_104': 'Screen1_314_16_mobilelabel_104',
+        'mobilelabel_105': 'Screen1_314_16_mobilelabel_105',
+        'mobilelabel_106': 'Screen1_314_16_mobilelabel_106',
+        'mobilecollapsblock_53': 'Screen1_314_16_mobilecollapsblock_53',
+        'mobilecollapsblockheader_54': 'Screen1_314_16_mobilecollapsblockheader_54',
+        'mobilecollapsblockcontent_55': 'Screen1_314_16_mobilecollapsblockcontent_55',
+        'mobilelabel_108': 'Screen1_314_16_mobilelabel_108',
+        'mobilelabel_109': 'Screen1_314_16_mobilelabel_109',
+        'mobilelabel_110': 'Screen1_314_16_mobilelabel_110',
+        'mobilelabel_111': 'Screen1_314_16_mobilelabel_111',
+        'mobilelabel_112': 'Screen1_314_16_mobilelabel_112',
+        'mobilelabel_113': 'Screen1_314_16_mobilelabel_113',
+        'mobilebutton_23': 'Screen1_314_16_mobilebutton_23'
     };
     if ("n2id" in window && window.n2id !== undefined) {
         $.extend(n2id, n2id_buf);
@@ -79,12 +150,34 @@ function Screen1_314_16_js() {
     // screen elements extra js
     function Screen1_314_16_elementsExtraJS() {
         // screen (Screen1_314_16) extra code
+        /* mobilecollapsblock_32 */
+        $("#Screen1_314_16_mobilecollapsblock_32 .ui-collapsible-heading-toggle").attr("tabindex", "9");
+        /* mobilecollapsblock_35 */
+        $("#Screen1_314_16_mobilecollapsblock_35 .ui-collapsible-heading-toggle").attr("tabindex", "9");
+        /* mobilecollapsblock_38 */
+        $("#Screen1_314_16_mobilecollapsblock_38 .ui-collapsible-heading-toggle").attr("tabindex", "9");
+        /* mobilecollapsblock_41 */
+        $("#Screen1_314_16_mobilecollapsblock_41 .ui-collapsible-heading-toggle").attr("tabindex", "9");
+        /* mobilecollapsblock_44 */
+        $("#Screen1_314_16_mobilecollapsblock_44 .ui-collapsible-heading-toggle").attr("tabindex", "9");
+        /* mobilecollapsblock_53 */
+        $("#Screen1_314_16_mobilecollapsblock_53 .ui-collapsible-heading-toggle").attr("tabindex", "9");
     };
     // screen elements handler
     function Screen1_314_16_elementsEvents() {
         $(document).on("click", "a :input,a a,a fieldset label", function(event) {
             event.stopPropagation();
         });
+        $(document).off("click", '#Screen1_314_16_mobilefooter [name="mobilebutton_23"]').on({
+            click: function(event) {
+                if (!$(this).attr('disabled')) {
+                    Apperyio.navigateTo('startScreen', {
+                        transition: 'fade',
+                        reverse: false
+                    });
+                }
+            },
+        }, '#Screen1_314_16_mobilefooter [name="mobilebutton_23"]');
     };
     $(document).off("pagebeforeshow", "#Screen1_314_16").on("pagebeforeshow", "#Screen1_314_16", function(event, ui) {
         Apperyio.CurrentScreen = "Screen1_314_16";
