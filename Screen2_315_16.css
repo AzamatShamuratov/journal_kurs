@@ -451,3 +451,10 @@
 .Screen2_315_16_mobilefooter {
 	min-height:38px;
 }
+/* mobilebutton_96 */
+#Screen2_315_16_mobilebutton_96 {
+
+}
+.ui-btn.Screen2_315_16_mobilebutton_96 {
+	margin: 4px 5px 4px 5px;
+}

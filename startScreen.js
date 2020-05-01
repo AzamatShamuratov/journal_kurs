@@ -36,7 +36,14 @@ function startScreen_js() {
     var n2id_buf = {
         'mobilelabel_5': 'startScreen_mobilelabel_5',
         'mobilebutton_2': 'startScreen_mobilebutton_2',
-        'mobilebutton_4': 'startScreen_mobilebutton_4'
+        'mobilebutton_4': 'startScreen_mobilebutton_4',
+        'mobilebutton_16': 'startScreen_mobilebutton_16',
+        'mobileimage_7': 'startScreen_mobileimage_7',
+        'mobilelabel_8': 'startScreen_mobilelabel_8',
+        'spacer_17': 'startScreen_spacer_17',
+        'mobilelabel_12': 'startScreen_mobilelabel_12',
+        'mobilelabel_13': 'startScreen_mobilelabel_13',
+        'mobilelabel_14': 'startScreen_mobilelabel_14'
     };
     if ("n2id" in window && window.n2id !== undefined) {
         $.extend(n2id, n2id_buf);
@@ -105,6 +112,13 @@ function startScreen_js() {
                 }
             },
         }, '#startScreen_mobilecontainer [name="mobilebutton_4"]');
+        $(document).off("click", '#startScreen_mobilefooter [name="mobilebutton_16"]').on({
+            click: function(event) {
+                if (!$(this).attr('disabled')) {
+                    $('[id="startScreen_panel_6"]').panel("open");
+                }
+            },
+        }, '#startScreen_mobilefooter [name="mobilebutton_16"]');
     };
     $(document).off("pagebeforeshow", "#startScreen").on("pagebeforeshow", "#startScreen", function(event, ui) {
         Apperyio.CurrentScreen = "startScreen";

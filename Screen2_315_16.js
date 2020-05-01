@@ -98,7 +98,8 @@ function Screen2_315_16_js() {
         'mobilelabel_91': 'Screen2_315_16_mobilelabel_91',
         'mobilelabel_88': 'Screen2_315_16_mobilelabel_88',
         'mobilelabel_90': 'Screen2_315_16_mobilelabel_90',
-        'mobilelabel_87': 'Screen2_315_16_mobilelabel_87'
+        'mobilelabel_87': 'Screen2_315_16_mobilelabel_87',
+        'mobilebutton_96': 'Screen2_315_16_mobilebutton_96'
     };
     if ("n2id" in window && window.n2id !== undefined) {
         $.extend(n2id, n2id_buf);
@@ -165,6 +166,16 @@ function Screen2_315_16_js() {
         $(document).on("click", "a :input,a a,a fieldset label", function(event) {
             event.stopPropagation();
         });
+        $(document).off("click", '#Screen2_315_16_mobilefooter [name="mobilebutton_96"]').on({
+            click: function(event) {
+                if (!$(this).attr('disabled')) {
+                    Apperyio.navigateTo('startScreen', {
+                        transition: 'slidedown',
+                        reverse: false
+                    });
+                }
+            },
+        }, '#Screen2_315_16_mobilefooter [name="mobilebutton_96"]');
     };
     $(document).off("pagebeforeshow", "#Screen2_315_16").on("pagebeforeshow", "#Screen2_315_16", function(event, ui) {
         Apperyio.CurrentScreen = "Screen2_315_16";
