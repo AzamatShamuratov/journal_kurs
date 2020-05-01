@@ -26,6 +26,9 @@ Apperyio.AppPages = [{
 }, {
     "name": "startScreen",
     "location": "startScreen.html"
+}, {
+    "name": "Screen2_315_16",
+    "location": "Screen2_315_16.html"
 }];
 
 function Screen1_314_16_js() {

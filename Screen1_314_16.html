@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Screen1_314_16
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <!-- Uncomment link and meta tags below to activate PWA icons and theme color -->
+        <!-- link rel="manifest" href="../manifest.json" crossOrigin="use-credentials" -->
+        <!-- meta name="theme-color" content="#ffffff" -->
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <!-- Uncomment this script to activate service worker -->
+        <!-- <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+        }
+        </script>
+        -->
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function() {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                } else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1) {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                } else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <link href="../libs/exadel-carousel/jquery.mobile.carousel.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="../libs/exadel-carousel/carousel.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+            $("body").bind("swipeleft", function(e) {
+                e.preventDefault();
+            });
+            $("body").bind("swiperight", function(e) {
+                e.preventDefault();
+            });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Screen1_314_16" id="Screen1_314_16"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Screen1_314_16_mobileheader" class="Screen1_314_16_mobileheader">
+                <h1 dsid="mobileheader">
+                    Расписание
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Screen1_314_16_mobilecontainer" name="mobilecontainer"
+            class="Screen1_314_16_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <link href="Screen1_314_16.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Screen1_314_16.js">
+                </script>
+                <!-- mobilecollapsibleset_31 -->
+                <div data-role="collapsible-set" data-theme="f" data-content-theme=f data-collapsed-icon='plus'
+                data-expanded-icon='minus' name="mobilecollapsibleset_31" id="Screen1_314_16_mobilecollapsibleset_31"
+                dsid="mobilecollapsibleset_31" class="Screen1_314_16_mobilecollapsibleset_31">
+                    <!-- mobilecollapsblock_32 -->
+                    <div data-role="collapsible" id="Screen1_314_16_mobilecollapsblock_32" name="mobilecollapsblock_32"
+                    dsid="mobilecollapsblock_32" data-collapsed="false" data-theme="f" data-content-theme="f"
+                    data-iconpos='left' class="Screen1_314_16_mobilecollapsblock_32" reRender='mobilecollapsibleset_31'>
+                        <h3 id="Screen1_314_16_mobilecollapsblockheader_33" name="mobilecollapsblockheader_33"
+                        dsid="mobilecollapsblockheader_33">
+                            Понедельник
+                        </h3>
+                        <!-- mobilelabel_57 -->
+                        <div name="mobilelabel_57" id="Screen1_314_16_mobilelabel_57" dsid="mobilelabel_57"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_57">
+                            8:30
+                        </div>
+                        <!-- mobilelabel_59 -->
+                        <div name="mobilelabel_59" id="Screen1_314_16_mobilelabel_59" dsid="mobilelabel_59"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_59">
+                            Управление программным проектом (лекция)
+                        </div>
+                        <!-- mobilelabel_73 -->
+                        <div name="mobilelabel_73" id="Screen1_314_16_mobilelabel_73" dsid="mobilelabel_73"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_73">
+                            ауд: Б518
+                        </div>
+                        <!-- mobilelabel_60 -->
+                        <div name="mobilelabel_60" id="Screen1_314_16_mobilelabel_60" dsid="mobilelabel_60"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_60">
+                            10:00
+                        </div>
+                        <!-- mobilelabel_61 -->
+                        <div name="mobilelabel_61" id="Screen1_314_16_mobilelabel_61" dsid="mobilelabel_61"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_61">
+                            Введение в мультимедиа (лекция)
+                        </div>
+                        <!-- mobilelabel_72 -->
+                        <div name="mobilelabel_72" id="Screen1_314_16_mobilelabel_72" dsid="mobilelabel_72"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_72">
+                            ауд: А125
+                        </div>
+                        <!-- mobilelabel_62 -->
+                        <div name="mobilelabel_62" id="Screen1_314_16_mobilelabel_62" dsid="mobilelabel_62"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_62">
+                            11:30
+                        </div>
+                        <!-- mobilelabel_63 -->
+                        <div name="mobilelabel_63" id="Screen1_314_16_mobilelabel_63" dsid="mobilelabel_63"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_63">
+                            Введение в мультимедиа (лаб)
+                        </div>
+                        <!-- mobilelabel_70 -->
+                        <div name="mobilelabel_70" id="Screen1_314_16_mobilelabel_70" dsid="mobilelabel_70"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_70">
+                            ауд: Б319
+                        </div>
+                        <!-- mobilelabel_64 -->
+                        <div name="mobilelabel_64" id="Screen1_314_16_mobilelabel_64" dsid="mobilelabel_64"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_64">
+                            13:00
+                        </div>
+                        <!-- mobilelabel_65 -->
+                        <div name="mobilelabel_65" id="Screen1_314_16_mobilelabel_65" dsid="mobilelabel_65"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_65">
+                            Взаимодействие человека и компьютера (практика)
+                        </div>
+                        <!-- mobilelabel_71 -->
+                        <div name="mobilelabel_71" id="Screen1_314_16_mobilelabel_71" dsid="mobilelabel_71"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_71">
+                            ауд: Д308
+                        </div>
+                    </div>
+                    <!-- mobilecollapsblock_35 -->
+                    <div data-role="collapsible" id="Screen1_314_16_mobilecollapsblock_35" name="mobilecollapsblock_35"
+                    dsid="mobilecollapsblock_35" data-collapsed="true" data-theme="f" data-content-theme="f"
+                    data-iconpos='left' class="Screen1_314_16_mobilecollapsblock_35" reRender='mobilecollapsibleset_31'>
+                        <h3 id="Screen1_314_16_mobilecollapsblockheader_36" name="mobilecollapsblockheader_36"
+                        dsid="mobilecollapsblockheader_36">
+                            Вторник
+                        </h3>
+                        <!-- mobilelabel_66 -->
+                        <div name="mobilelabel_66" id="Screen1_314_16_mobilelabel_66" dsid="mobilelabel_66"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_66">
+                            8:30
+                        </div>
+                        <!-- mobilelabel_67 -->
+                        <div name="mobilelabel_67" id="Screen1_314_16_mobilelabel_67" dsid="mobilelabel_67"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_67">
+                            Экономика программного обеспечения (лаб/прак)
+                        </div>
+                        <!-- mobilelabel_74 -->
+                        <div name="mobilelabel_74" id="Screen1_314_16_mobilelabel_74" dsid="mobilelabel_74"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_74">
+                            ауд: Б513 / Б515
+                        </div>
+                        <!-- mobilelabel_68 -->
+                        <div name="mobilelabel_68" id="Screen1_314_16_mobilelabel_68" dsid="mobilelabel_68"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_68">
+                            10:00
+                        </div>
+                        <!-- mobilelabel_69 -->
+                        <div name="mobilelabel_69" id="Screen1_314_16_mobilelabel_69" dsid="mobilelabel_69"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_69">
+                            Системы реального времени. Внешние системы (лаб)
+                        </div>
+                        <!-- mobilelabel_75 -->
+                        <div name="mobilelabel_75" id="Screen1_314_16_mobilelabel_75" dsid="mobilelabel_75"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_75">
+                            ауд: А118
+                        </div>
+                    </div>
+                    <!-- mobilecollapsblock_38 -->
+                    <div data-role="collapsible" id="Screen1_314_16_mobilecollapsblock_38" name="mobilecollapsblock_38"
+                    dsid="mobilecollapsblock_38" data-collapsed="true" data-theme="f" data-content-theme="f"
+                    data-iconpos='left' class="Screen1_314_16_mobilecollapsblock_38" reRender='mobilecollapsibleset_31'>
+                        <h3 id="Screen1_314_16_mobilecollapsblockheader_39" name="mobilecollapsblockheader_39"
+                        dsid="mobilecollapsblockheader_39">
+                            Среда
+                        </h3>
+                        <!-- mobilelabel_77 -->
+                        <div name="mobilelabel_77" id="Screen1_314_16_mobilelabel_77" dsid="mobilelabel_77"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_77">
+                            8:30
+                        </div>
+                        <!-- mobilelabel_78 -->
+                        <div name="mobilelabel_78" id="Screen1_314_16_mobilelabel_78" dsid="mobilelabel_78"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_78">
+                            Управление программным проектом (практика) /
+                        </div>
+                        <!-- mobilelabel_79 -->
+                        <div name="mobilelabel_79" id="Screen1_314_16_mobilelabel_79" dsid="mobilelabel_79"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_79">
+                            ауд: Б520
+                        </div>
+                        <!-- mobilelabel_81 -->
+                        <div name="mobilelabel_81" id="Screen1_314_16_mobilelabel_81" dsid="mobilelabel_81"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_81">
+                            10:00
+                        </div>
+                        <!-- mobilelabel_82 -->
+                        <div name="mobilelabel_82" id="Screen1_314_16_mobilelabel_82" dsid="mobilelabel_82"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_82">
+                            Взаимодействие человека и компьютера (лекция)
+                        </div>
+                        <!-- mobilelabel_83 -->
+                        <div name="mobilelabel_83" id="Screen1_314_16_mobilelabel_83" dsid="mobilelabel_83"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_83">
+                            ауд: А02
+                        </div>
+                        <!-- mobilelabel_84 -->
+                        <div name="mobilelabel_84" id="Screen1_314_16_mobilelabel_84" dsid="mobilelabel_84"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_84">
+                            11:30
+                        </div>
+                        <!-- mobilelabel_85 -->
+                        <div name="mobilelabel_85" id="Screen1_314_16_mobilelabel_85" dsid="mobilelabel_85"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_85">
+                            Социология (лекция) /
+                        </div>
+                        <!-- mobilelabel_86 -->
+                        <div name="mobilelabel_86" id="Screen1_314_16_mobilelabel_86" dsid="mobilelabel_86"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_86">
+                            ауд: С346
+                        </div>
+                        <!-- mobilelabel_87 -->
+                        <div name="mobilelabel_87" id="Screen1_314_16_mobilelabel_87" dsid="mobilelabel_87"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_87">
+                            / Социология (семинар)
+                        </div>
+                        <!-- mobilelabel_88 -->
+                        <div name="mobilelabel_88" id="Screen1_314_16_mobilelabel_88" dsid="mobilelabel_88"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_88">
+                            ауд: С252
+                        </div>
+                        <!-- mobilelabel_89 -->
+                        <div name="mobilelabel_89" id="Screen1_314_16_mobilelabel_89" dsid="mobilelabel_89"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_89">
+                            13:00
+                        </div>
+                        <!-- mobilelabel_90 -->
+                        <div name="mobilelabel_90" id="Screen1_314_16_mobilelabel_90" dsid="mobilelabel_90"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_90">
+                            / История Узбекистана (лекция)
+                        </div>
+                        <!-- mobilelabel_91 -->
+                        <div name="mobilelabel_91" id="Screen1_314_16_mobilelabel_91" dsid="mobilelabel_91"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_91">
+                            ауд: С443
+                        </div>
+                    </div>
+                    <!-- mobilecollapsblock_41 -->
+                    <div data-role="collapsible" id="Screen1_314_16_mobilecollapsblock_41" name="mobilecollapsblock_41"
+                    dsid="mobilecollapsblock_41" data-collapsed="true" data-theme="f" data-content-theme="f"
+                    data-iconpos='left' class="Screen1_314_16_mobilecollapsblock_41" reRender='mobilecollapsibleset_31'>
+                        <h3 id="Screen1_314_16_mobilecollapsblockheader_42" name="mobilecollapsblockheader_42"
+                        dsid="mobilecollapsblockheader_42">
+                            Четверг
+                        </h3>
+                        <!-- mobilelabel_92 -->
+                        <div name="mobilelabel_92" id="Screen1_314_16_mobilelabel_92" dsid="mobilelabel_92"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_92">
+                            8:30
+                        </div>
+                        <!-- mobilelabel_93 -->
+                        <div name="mobilelabel_93" id="Screen1_314_16_mobilelabel_93" dsid="mobilelabel_93"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_93">
+                            Развития методологии и практики (прак / лаб)
+                        </div>
+                        <!-- mobilelabel_94 -->
+                        <div name="mobilelabel_94" id="Screen1_314_16_mobilelabel_94" dsid="mobilelabel_94"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_94">
+                            ауд: Б515 / Б513
+                        </div>
+                        <!-- mobilelabel_95 -->
+                        <div name="mobilelabel_95" id="Screen1_314_16_mobilelabel_95" dsid="mobilelabel_95"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_95">
+                            10:00
+                        </div>
+                        <!-- mobilelabel_96 -->
+                        <div name="mobilelabel_96" id="Screen1_314_16_mobilelabel_96" dsid="mobilelabel_96"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_96">
+                            Развития методологии и практики (лекция)
+                        </div>
+                        <!-- mobilelabel_97 -->
+                        <div name="mobilelabel_97" id="Screen1_314_16_mobilelabel_97" dsid="mobilelabel_97"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_97">
+                            ауд: Б518
+                        </div>
+                        <!-- mobilelabel_98 -->
+                        <div name="mobilelabel_98" id="Screen1_314_16_mobilelabel_98" dsid="mobilelabel_98"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_98">
+                            11:30
+                        </div>
+                        <!-- mobilelabel_99 -->
+                        <div name="mobilelabel_99" id="Screen1_314_16_mobilelabel_99" dsid="mobilelabel_99"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_99">
+                            Иностранный язык
+                        </div>
+                        <!-- mobilelabel_100 -->
+                        <div name="mobilelabel_100" id="Screen1_314_16_mobilelabel_100" dsid="mobilelabel_100"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_100">
+                            ауд: каф
+                        </div>
+                    </div>
+                    <!-- mobilecollapsblock_44 -->
+                    <div data-role="collapsible" id="Screen1_314_16_mobilecollapsblock_44" name="mobilecollapsblock_44"
+                    dsid="mobilecollapsblock_44" data-collapsed="true" data-theme="f" data-content-theme="f"
+                    data-iconpos='left' class="Screen1_314_16_mobilecollapsblock_44" reRender='mobilecollapsibleset_31'>
+                        <h3 id="Screen1_314_16_mobilecollapsblockheader_45" name="mobilecollapsblockheader_45"
+                        dsid="mobilecollapsblockheader_45">
+                            Пятница
+                        </h3>
+                        <!-- mobilelabel_115 -->
+                        <div name="mobilelabel_115" id="Screen1_314_16_mobilelabel_115" dsid="mobilelabel_115"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_115">
+                            8:30
+                        </div>
+                        <!-- mobilelabel_116 -->
+                        <div name="mobilelabel_116" id="Screen1_314_16_mobilelabel_116" dsid="mobilelabel_116"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_116">
+                            Искусственный интеллект (лекция) /
+                        </div>
+                        <!-- mobilelabel_117 -->
+                        <div name="mobilelabel_117" id="Screen1_314_16_mobilelabel_117" dsid="mobilelabel_117"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_117">
+                            ауд: Б417
+                        </div>
+                        <!-- mobilelabel_101 -->
+                        <div name="mobilelabel_101" id="Screen1_314_16_mobilelabel_101" dsid="mobilelabel_101"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_101">
+                            10:00
+                        </div>
+                        <!-- mobilelabel_102 -->
+                        <div name="mobilelabel_102" id="Screen1_314_16_mobilelabel_102" dsid="mobilelabel_102"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_102">
+                            Экономика программного обеспечения /
+                        </div>
+                        <!-- mobilelabel_103 -->
+                        <div name="mobilelabel_103" id="Screen1_314_16_mobilelabel_103" dsid="mobilelabel_103"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_103">
+                            / Взаимодействие человека и компьютера
+                        </div>
+                        <!-- mobilelabel_107 -->
+                        <div name="mobilelabel_107" id="Screen1_314_16_mobilelabel_107" dsid="mobilelabel_107"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_107">
+                            ауд: Б518
+                        </div>
+                        <!-- mobilelabel_104 -->
+                        <div name="mobilelabel_104" id="Screen1_314_16_mobilelabel_104" dsid="mobilelabel_104"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_104">
+                            11:00
+                        </div>
+                        <!-- mobilelabel_105 -->
+                        <div name="mobilelabel_105" id="Screen1_314_16_mobilelabel_105" dsid="mobilelabel_105"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_105">
+                            Искусственный интеллект (практика)
+                        </div>
+                        <!-- mobilelabel_106 -->
+                        <div name="mobilelabel_106" id="Screen1_314_16_mobilelabel_106" dsid="mobilelabel_106"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_106">
+                            ауд: А402
+                        </div>
+                    </div>
+                    <!-- mobilecollapsblock_53 -->
+                    <div data-role="collapsible" id="Screen1_314_16_mobilecollapsblock_53" name="mobilecollapsblock_53"
+                    dsid="mobilecollapsblock_53" data-collapsed="true" data-theme="f" data-content-theme="f"
+                    data-iconpos='left' class="Screen1_314_16_mobilecollapsblock_53" reRender='mobilecollapsibleset_31'>
+                        <h3 id="Screen1_314_16_mobilecollapsblockheader_54" name="mobilecollapsblockheader_54"
+                        dsid="mobilecollapsblockheader_54">
+                            Суббота
+                        </h3>
+                        <!-- mobilelabel_108 -->
+                        <div name="mobilelabel_108" id="Screen1_314_16_mobilelabel_108" dsid="mobilelabel_108"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_108">
+                            8:30
+                        </div>
+                        <!-- mobilelabel_109 -->
+                        <div name="mobilelabel_109" id="Screen1_314_16_mobilelabel_109" dsid="mobilelabel_109"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_109">
+                            Системы реального времени. Внешние системы (лекция)
+                        </div>
+                        <!-- mobilelabel_110 -->
+                        <div name="mobilelabel_110" id="Screen1_314_16_mobilelabel_110" dsid="mobilelabel_110"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_110">
+                            ауд: Б03
+                        </div>
+                        <!-- mobilelabel_111 -->
+                        <div name="mobilelabel_111" id="Screen1_314_16_mobilelabel_111" dsid="mobilelabel_111"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_111">
+                            10:00
+                        </div>
+                        <!-- mobilelabel_112 -->
+                        <div name="mobilelabel_112" id="Screen1_314_16_mobilelabel_112" dsid="mobilelabel_112"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_112">
+                            Искусственный интеллект (лекция)
+                        </div>
+                        <!-- mobilelabel_113 -->
+                        <div name="mobilelabel_113" id="Screen1_314_16_mobilelabel_113" dsid="mobilelabel_113"
+                        data-role="appery_label" class="Screen1_314_16_mobilelabel_113">
+                            ауд: Б518
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Screen1_314_16_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="Screen1_314_16_mobilefooter" data-theme="f">
+                <!-- mobilebutton_23 --><!--
+                --><a data-role="button" name="mobilebutton_23" dsid="mobilebutton_23" class="Screen1_314_16_mobilebutton_23"
+                style='margin-left:5px; ' id="Screen1_314_16_mobilebutton_23" data-corners="true"
+                data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false" data-inline='true'
+                data-mini='true' data-theme="f" tabindex="7">
+                Назад
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -26,12 +26,17 @@ Apperyio.AppPages = [{
 }, {
     "name": "startScreen",
     "location": "startScreen.html"
+}, {
+    "name": "Screen2_315_16",
+    "location": "Screen2_315_16.html"
 }];
 
 function startScreen_js() {
     /* Object & array with components "name-to-id" mapping */
     var n2id_buf = {
-        'mobilebutton_2': 'startScreen_mobilebutton_2'
+        'mobilelabel_5': 'startScreen_mobilelabel_5',
+        'mobilebutton_2': 'startScreen_mobilebutton_2',
+        'mobilebutton_4': 'startScreen_mobilebutton_4'
     };
     if ("n2id" in window && window.n2id !== undefined) {
         $.extend(n2id, n2id_buf);
@@ -90,6 +95,16 @@ function startScreen_js() {
                 }
             },
         }, '#startScreen_mobilecontainer [name="mobilebutton_2"]');
+        $(document).off("click", '#startScreen_mobilecontainer [name="mobilebutton_4"]').on({
+            click: function(event) {
+                if (!$(this).attr('disabled')) {
+                    Apperyio.navigateTo('Screen2_315_16', {
+                        transition: 'slideup',
+                        reverse: false
+                    });
+                }
+            },
+        }, '#startScreen_mobilecontainer [name="mobilebutton_4"]');
     };
     $(document).off("pagebeforeshow", "#startScreen").on("pagebeforeshow", "#startScreen", function(event, ui) {
         Apperyio.CurrentScreen = "startScreen";
